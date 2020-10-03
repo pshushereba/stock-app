@@ -1,11 +1,11 @@
-import React from 'react';
-import * as CanvasJSReact from './assets/canvasjs.react.js';
+import React, {Component} from 'react';
+import CanvasJSReact from './assets/canvasjs.react';
+// var CanvasJS = CanvasJSReact.CanvasJS;
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 const dataPoints =[];
-// const CanvasJS = CanvasJSReact.CanvasJS;
-const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-class StockChart extends React.Component {
+class StockChart extends Component {
 	render() {
 		const options = {
 			exportEnabled: true,
